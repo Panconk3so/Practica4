@@ -13,4 +13,4 @@ COPY --from=build-env /app/out .
 
 ENV APP_NET_CORE Practica4.dll
 
-CMD ASPNETCORE_URLS=http://:$PORT dotnet $APP_NET_COREs
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet $APP_NET_CORE
